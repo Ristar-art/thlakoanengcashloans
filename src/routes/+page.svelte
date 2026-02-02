@@ -47,7 +47,7 @@
                     <input type="email" placeholder="Email" bind:value={formData.email} required />
     
                 </div>
-                                <input type="tel" placeholder="Phone Number" bind:value={formData.phone} required />
+                <input type="tel" placeholder="Phone Number" bind:value={formData.phone} required />
                 <select bind:value={formData.amount} required>
                     <option value="" disabled selected>Select Loan Amount</option>
                     <option value="100">R 100.00</option>
@@ -131,18 +131,30 @@
             </form>
         </div>
         <div class="text-section">
-            <h1>Personal Loans</h1>
+            <h1 style="font-size: 3rem; color: #ffd900">Personal Loans</h1>
             <p>Looking for a personal loan?</p>
             <p>Thlakoaneng Cash Loans will find your best options fast! Fill in a free application and get our current loan offers.</p>
         </div>
     </div>
 </section>
-<h1 style="color: black; text-align:center; margin-top: 100px">Get Assistance in 3 easy steps</h1>
+<section style="width: 1200px; hight:800px; margin: 50px auto; padding:  20px; display:flex; ">
 
-<div class="info-section steps" style="padding: 20px; max-width: 1200px; margin: 0 auto; background-color: #ffd900; margin-top: 20px; border-radius: 8px; gap: 20px; display: flex; justify-content: space-around; flex-wrap: wrap; ">
+    <img src={hero} alt="" style="width: 50%; border-radius: 8px">
+   <div style="width:50%; display:flex;flex-direction:column ;text-align:center; justify-content:center; align-items:center; padding-left:20px; padding-right:20px ">
+       <h2>
+        You will receive a response after completing the loan application with our current offers!!!
+
+       </h2>
+       <p style="color:black;">somethitf fdv;sk df;ousv .dkacxjv adkcjhgv ,ajsdcv amnsdchgv sa,dchva asjldgcv dksvj dsvba dsjhfv ifbvds udsfva jiusdfa jujsdfbai usdjab </p>
+   </div>
+
+</section>
+<h1 style="color: black; text-align:center; margin-top: 20px">Get Assistance in 3 easy steps</h1>
+
+<div class="" style="padding: 20px; max-width: 1200px; margin: 0 auto; margin-top: 20px; border-radius: 8px; gap: 20px; display: flex; justify-content: space-around; flex-wrap: wrap; ">
         <div class="step-block" >
             <div class="icon-step">
-      <img src={CV} alt="" style="width: 100px; height: 100px;"/>
+             <img src={CV} alt="" style="width: 100px; height: 100px;"/>
             </div>
             
                
@@ -180,35 +192,46 @@
       
     </div>
      </div>   
-<!-- <div class="who-can-apply"
-			style="background-image: url('/')"
->
-<div class="absolute inset-0 bg-black/40"></div>
-            <div class="max-w-5xl mx-auto px-6 relative z-10">
-                <h1 class="text-5xl md:text-6xl font-bold mb-8 leading-tight text-warm">
-                    Empowering Communities<br>for a Sustainable Future
-                </h1>
-                <p class="text-2xl mb-10 text-warm">Helping Hands Multi Purpose Centre</p>
-                <a href="/#contact" class="bg-green text-primary px-12 py-5 rounded-full text-xl font-bold hover:bg-green/80 hover:text-primary transition inline-block shadow-lg hover:shadow-xl">
-                    Get Involved Today
-                </a>
-            </div>
+    <section class="who-can-apply" style="background-image: url({hero})"> 
+         <div class="who-can-apply-overlay">
+            <h1 class="who-can-apply-title">
+                Why use Thlakoaneng Cash Loans?
+            </h1>
+
+
+
+
+             <li><span style="font-size:large">100% free</span>:The application is free and does not include any hidden fees.
+            </li>
+
+             <li><span style="font-size:large">Quick & easy</span>: The whole application process is done online in minutes.
+            </li>
+
+             <li><span style="font-size:large">Convenient</span> Compare up to 19 banks & lenders from one application.
+            </li>
+
+             <li><span style="font-size:large">Non-binding</span>: You decide if you want to accept or decline your offers.
+            </li>
+
+             <li><span style="font-size:large">Safe</span>: Your personal data is safe with us.
+            </li>
+
 
         </div>
-
-
-        <section id="/" class="text-primary pt-32 pb-32 text-center relative bg-cover bg-center h-[90vh]" style="background-image: url('/Helping Hands.svg')">
-            <div class="absolute inset-0 bg-black/40"></div>
-            <div class="max-w-5xl mx-auto px-6 relative z-10">
-                <h1 class="text-5xl md:text-6xl font-bold mb-8 leading-tight text-warm">
-                    Empowering Communities<br>for a Sustainable Future
+            <div class="who-can-apply-content">
+                <h1 class="who-can-apply-title">
+                    Who can apply?
                 </h1>
-                <p class="text-2xl mb-10 text-warm">Helping Hands Multi Purpose Centre</p>
-                <a href="/#contact" class="bg-green text-primary px-12 py-5 rounded-full text-xl font-bold hover:bg-green/80 hover:text-primary transition inline-block shadow-lg hover:shadow-xl">
-                    Get Involved Today
-                </a>
+                <ol>
+                    <li>You are over 18 years old</li>
+                    <li>You are employed and employment has lasted for more than 6 months</li>
+                    <li>Your loan should not be more than 8 times your monthly income</li>
+                </ol>
+               
             </div>
-        </section> -->
+    </section>
+
+
 
 
 
@@ -483,13 +506,95 @@
         height: 320px;
         justify-content: center;
     }
-   .who-can-apply {
+    .who-can-apply {
     margin-top: 50px;
     background-size: cover;
     background-position: center;
-    padding: 60px 20px;
+    padding: 20px;
     position: relative;
     border-radius: 8px;
     overflow: hidden;
+    max-width: 1200px;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+    display: flex;
+}
+
+/* Background overlay */
+.who-can-apply::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.who-can-apply-overlay,
+.who-can-apply-content {
+    position: relative;
+    z-index: 10;
+    flex: 1;
+    padding: 20px;
+}
+
+.who-can-apply-overlay {
+    /* background-color: rgba(163, 3, 0, 0.1); */
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.who-can-apply-overlay li {
+    color: white;
+    margin-bottom: 15px;
+    list-style-position: inside;
+}
+
+.who-can-apply-content {
+    /* background-color: rgba(255, 217, 0, 0.1); */
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.who-can-apply-content ol {
+    color: white;
+    padding-left: 20px;
+}
+
+.who-can-apply-content ol li {
+    margin-bottom: 10px;
+}
+
+.who-can-apply-title {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #ffd900;
+    text-align: start;
+}
+
+@media (min-width: 768px) {
+    .who-can-apply-title {
+        font-size: 2rem;
     }
+}
+
+@media (max-width: 768px) {
+    .who-can-apply {
+        flex-direction: column;
+    }
+    
+    .who-can-apply-overlay,
+    .who-can-apply-content {
+        padding: 20px;
+    }
+    
+    .who-can-apply-title {
+        font-size: 2rem;
+    }
+}
 </style>
