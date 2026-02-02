@@ -40,7 +40,7 @@
 	}
 </script>
 
-<section class="hero" style="background-image: url({hero}); background-size: cover; background-position: center;">
+<section class="hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({hero}); background-size: cover; background-position: center;">
     <div class="hero-container">
         <div class="form-section">
             <h2>Apply Now!</h2>
@@ -355,6 +355,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
     }
     .hero-container {
         display: flex;
@@ -374,16 +375,18 @@
         text-align: left;
         display: flex;
         flex-direction: column;
-        /* justify-content: flex-end; */
+        justify-content: center;
+
     }
     h1 {
         color: white;
         /* color: #a30300; */
         margin-bottom: 20px;
+        font-size: xx-large;
     }
     p {
-        color: white;
-
+        color  : white;
+        font-size:x-large;
         /* color: #a30300; */
         margin: 10px 0;
     }

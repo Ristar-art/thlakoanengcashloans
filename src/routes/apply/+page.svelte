@@ -1,5 +1,6 @@
 <script>
-	import hero from '$lib/assets/hero.jpg';
+	import apply from '$lib/assets/hero.jpg';
+    import hero from "$lib/assets/pexels-kampus-8441817.jpg"
 	import CV from '$lib/assets/cv.png';
     import Mobile from '$lib/assets/mobile.png'
     import Optiom from '$lib/assets/option.png'
@@ -130,7 +131,7 @@
         </form>
     </div>
     <div class="image-section">
-        <img src={hero} alt="Apply for finance" />
+        <img src={apply} alt="Apply for finance" />
     </div>
 </section>
 

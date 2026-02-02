@@ -1,4 +1,5 @@
 <script>
+    
 	import hero from '$lib/assets/money2.jpg';
     import Walet from '$lib/assets/walet.jpg'
     import Coins from '$lib/assets/coins2.jpg'
@@ -6,7 +7,7 @@
 
 </script>
 
-<section style="width: 100%; height:40vh; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({hero}); background-size:cover; background-position:center; display: flex; justify-content:center; align-items:center;">
+<section style="width: 100%; height:60vh; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({hero}); background-size:cover; background-position:center; display: flex; justify-content:center; align-items:center;">
  <h1 style="color: #ffd900;">About Us</h1>
 </section>
 
