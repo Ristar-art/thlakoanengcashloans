@@ -12,10 +12,8 @@
 	];
 	
 	const services = [
-		{ name: 'Personal Loans', href: '#' },
-		{ name: 'Quick Approval', href: '#' },
-		{ name: 'Online Application', href: '#' },
-		{ name: 'Loan Comparison', href: '#' }
+		{ name: '3 easy steps', href: '/#easy-steps' },
+		{ name: 'Who can apply?', href: '/#who-can-apply' },
 	];
 	
 	const legalLinks = [
@@ -36,6 +34,29 @@
 		{ name: 'Instagram', url: 'https://instagram.com', icon: 'fab fa-instagram' },
 		{ name: 'LinkedIn', url: 'https://linkedin.com', icon: 'fab fa-linkedin-in' }
 	];
+
+	function handleServiceClick(href: string) {
+		// Check if we're on the homepage
+		if (window.location.pathname === '/') {
+			// We're on the homepage, just scroll to the section
+			const elementId = href.split('#')[1];
+			const element = document.getElementById(elementId);
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			}
+		} else {
+			// Navigate to homepage with hash
+			window.location.href = href;
+		}
+	}
+
+	function handleQuickLinkClick(href: string) {
+		if (href.startsWith('/#')) {
+			handleServiceClick(href);
+		} else {
+			window.location.href = href;
+		}
+	}
 </script>
 
 <footer class="footer">
@@ -63,7 +84,7 @@
 				<h3>Quick Links</h3>
 				<ul>
 					{#each quickLinks as link}
-						<li><a href={link.href}>{link.name}</a></li>
+						<li><a href={link.href} on:click|preventDefault={() => handleQuickLinkClick(link.href)}>{link.name}</a></li>
 					{/each}
 				</ul>
 			</div>
@@ -73,7 +94,7 @@
 				<h3>Our Services</h3>
 				<ul>
 					{#each services as service}
-						<li><a href={service.href}>{service.name}</a></li>
+						<li><a href={service.href} on:click|preventDefault={() => handleServiceClick(service.href)}>{service.name}</a></li>
 					{/each}
 				</ul>
 			</div>

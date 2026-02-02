@@ -1,8 +1,11 @@
 	<script>
-	import hero from '$lib/assets/hero.jpg';
+	import hero from '$lib/assets/vitaly-gariev.jpg';
 	import CV from '$lib/assets/cv.png';
     import Mobile from '$lib/assets/mobile.png'
     import Optiom from '$lib/assets/option.png'
+    import Money from '$lib/assets/money.jpg'
+    import Coins from '$lib/assets/coins.jpg'
+
 	let formData = { name: '', email: '', phone: '', amount: '', period: '', repayment: '', terms: false };
 
 	let idInput;
@@ -139,19 +142,19 @@
 </section>
 <section style="width: 1200px; hight:800px; margin: 50px auto; padding:  20px; display:flex; ">
 
-    <img src={hero} alt="" style="width: 50%; border-radius: 8px">
+    <img src={Money} alt="" style="width: 50%; border-radius: 8px">
    <div style="width:50%; display:flex;flex-direction:column ;text-align:center; justify-content:center; align-items:center; padding-left:20px; padding-right:20px ">
        <h2>
         You will receive a response after completing the loan application with our current offers!!!
 
        </h2>
-       <p style="color:black;">somethitf fdv;sk df;ousv .dkacxjv adkcjhgv ,ajsdcv amnsdchgv sa,dchva asjldgcv dksvj dsvba dsjhfv ifbvds udsfva jiusdfa jujsdfbai usdjab </p>
+       <!-- <p style="color:black;">somethitf fdv;sk df;ousv .dkacxjv adkcjhgv ,ajsdcv amnsdchgv sa,dchva asjldgcv dksvj dsvba dsjhfv ifbvds udsfva jiusdfa jujsdfbai usdjab </p> -->
    </div>
 
 </section>
-<h1 style="color: black; text-align:center; margin-top: 20px">Get Assistance in 3 easy steps</h1>
+<h1 id="easy-steps" style="color: black; text-align:center; margin-top: 20px">Get Assistance in 3 easy steps</h1>
 
-<div class="" style="padding: 20px; max-width: 1200px; margin: 0 auto; margin-top: 20px; border-radius: 8px; gap: 20px; display: flex; justify-content: space-around; flex-wrap: wrap; ">
+<div  class="" style="padding: 20px; max-width: 1200px; margin: 0 auto; margin-top: 20px; border-radius: 8px; gap: 20px; display: flex; justify-content: space-around; flex-wrap: wrap; ">
         <div class="step-block" >
             <div class="icon-step">
              <img src={CV} alt="" style="width: 100px; height: 100px;"/>
@@ -192,7 +195,7 @@
       
     </div>
      </div>   
-    <section class="who-can-apply" style="background-image: url({hero})"> 
+    <section id = "who-can-apply" class="who-can-apply" style="background-image: url({Coins})"> 
          <div class="who-can-apply-overlay">
             <h1 class="who-can-apply-title">
                 Why use Thlakoaneng Cash Loans?
@@ -201,19 +204,19 @@
 
 
 
-             <li><span style="font-size:large">100% free</span>:The application is free and does not include any hidden fees.
+             <li>100% free:The application is free and does not include any hidden fees.
             </li>
 
-             <li><span style="font-size:large">Quick & easy</span>: The whole application process is done online in minutes.
+             <li>Quick & easy: The whole application process is done online in minutes.
             </li>
 
-             <li><span style="font-size:large">Convenient</span> Compare up to 19 banks & lenders from one application.
+             <li>Convenient: Compare up to 19 banks & lenders from one application.
             </li>
 
-             <li><span style="font-size:large">Non-binding</span>: You decide if you want to accept or decline your offers.
+             <li>Non-binding: You decide if you want to accept or decline your offers.
             </li>
 
-             <li><span style="font-size:large">Safe</span>: Your personal data is safe with us.
+             <li>Safe: Your personal data is safe with us.
             </li>
 
 

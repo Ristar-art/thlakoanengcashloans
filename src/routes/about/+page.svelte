@@ -1,5 +1,9 @@
 <script>
-	import hero from '$lib/assets/hero.jpg';
+	import hero from '$lib/assets/money2.jpg';
+    import Walet from '$lib/assets/walet.jpg'
+    import Coins from '$lib/assets/coins2.jpg'
+
+
 </script>
 
 <section style="width: 100%; height:40vh; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({hero}); background-size:cover; background-position:center; display: flex; justify-content:center; align-items:center;">
@@ -7,7 +11,7 @@
 </section>
 
 <section style="width: 1200px;  margin: 100px auto; display:flex">
-<img src={hero} alt="" style="width: 50%;">
+<img src={Walet} alt="" style="width: 50%;">
 <div style=" padding: 60px 20px">
 <h2>About Thlakoaneng Cash Loans
 </h2>
@@ -25,7 +29,7 @@
 </button>
 </div>
 </section>
-<section class="cta" style="background-image: url({hero})"> 
+<section class="cta" style="background-image: url({Coins})"> 
     <div class="cta-content">
         <h1 class="cta-title">
             You will receive a response after completing the<br/> loan application with our current offers!!!

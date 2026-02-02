@@ -1,5 +1,6 @@
 <script>
-	import hero from '$lib/assets/hero.jpg';
+	import hero from '$lib/assets/question.jpg';
+     import Question from '$lib/assets/question-mark.jpg';
 	
 	let activeItem = null;
 	
@@ -23,7 +24,7 @@
 	];
 </script>
 
-<section style="width: 100%; height:40vh; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({hero}); background-size:cover; background-position:center; display: flex; justify-content:center; align-items:center;">
+<section style="width: 100%; height:60vh; background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({hero}); background-size:cover; background-position:center; display: flex; justify-content:center; align-items:center;">
 	<h1 style="color: #ffd900;">Frequently Asked Questions</h1>
 </section>
 
@@ -56,7 +57,7 @@
 	</div>
 </section>
 
-<section class="cta" style="background-image: url({hero})"> 
+<section class="cta" style="background-image: url({Question})"> 
     <div class="cta-content">
         <h1 class="cta-title">
             Still have questions? Contact us today!
