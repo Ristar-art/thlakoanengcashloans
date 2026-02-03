@@ -28,7 +28,7 @@
 		return Math.ceil(total / targetPMT);
 	}
 
-	$: calculatedPayment = calculatePMT(formData.amount || 0, formData.period || 0);
+	$: calculatedPayment = calculatePMT(formData.amount || 0, formData.period || 1);
 
 	$: if (formData.repayment && formData.amount) {
 		formData.period = calculateMonths(formData.amount || 0, formData.repayment || 0).toString();
@@ -45,11 +45,9 @@
         <div class="form-section">
             <h2>Apply Now!</h2>
             <form on:submit|preventDefault={handleSubmit}>
-                <div class="top-inputs">
                     <input type="text" placeholder="Full Name" bind:value={formData.name} required />
                     <input type="email" placeholder="Email" bind:value={formData.email} required />
     
-                </div>
                 <input type="tel" placeholder="Phone Number" bind:value={formData.phone} required />
                 <select bind:value={formData.amount} required>
                     <option value="" disabled selected>Select Loan Amount</option>
@@ -94,7 +92,7 @@
                     <option value="300000">R 300000.00</option>
                     <option value="350000">R 350000.00</option> -->
                 </select>
-                <select bind:value={formData.period} required>
+                <!-- <select bind:value={formData.period} required>
                     <option value="" disabled selected>Select Repayment Period</option>
                     <option value="1">1 Month</option>
                     <option value="3">3 Months</option>
@@ -111,11 +109,11 @@
                     <option value="60">60 Months</option>
                     <option value="66">66 Months</option>
                     <option value="72">72 Months</option>
-                </select>
+                </select> -->
                 {#if calculatedPayment > 0}
-                    <p style="color: #a30000;">Calculated Monthly Payment: R {calculatedPayment.toFixed(2)}</p>
+                    <p style="color: #a30000;">Calculated Payment For The One Month: R {calculatedPayment.toFixed(2)}</p>
                 {/if}
-                <input type="number" placeholder="Desired Monthly Repayment" bind:value={formData.repayment} />
+                <!-- <input type="number" placeholder="Desired Monthly Repayment" bind:value={formData.repayment} /> -->
                 <div>
                     <p style="color: #a30000;">Please upload a valid ID and your latest 3 months bank statements.</p>
                     <button class="apply-button" type="button" on:click={() => idInput?.click()}>Upload ID</button>
