@@ -65,7 +65,7 @@
                     <option value="1000">R 1000.00</option>
                     <option value="1500">R 1500.00</option>
                     <option value="2000">R 2000.00</option>
-                    <option value="2500">R 2500.00</option>
+                    <!-- <option value="2500">R 2500.00</option>
                     <option value="3000">R 3000.00</option>
                     <option value="3500">R 3500.00</option>
                     <option value="4000">R 4000.00</option>
@@ -92,7 +92,7 @@
                     <option value="150000">R 150000.00</option>
                     <option value="200000">R 200000.00</option>
                     <option value="300000">R 300000.00</option>
-                    <option value="350000">R 350000.00</option>
+                    <option value="350000">R 350000.00</option> -->
                 </select>
                 <select bind:value={formData.period} required>
                     <option value="" disabled selected>Select Repayment Period</option>
