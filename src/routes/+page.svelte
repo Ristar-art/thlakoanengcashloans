@@ -127,7 +127,7 @@
                      <input type="checkbox" bind:checked={formData.terms} required />
                      I accept the <button type="button" class="terms-link" on:click={() => showTerms = true}>terms and privacy policy</button>.
                  </label>
-                 <!-- <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div> -->
+                 <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
                  <button class="apply-button" type="submit">Submit Application</button>
             </form>
         </div>
